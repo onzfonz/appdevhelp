@@ -2,63 +2,44 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-
+import g from "glamorous"
+import {rhythm} from "../utils/typography"
 import './index.css'
+import logo from '../images/101Logo.png'
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
-
-const TemplateWrapper = ({ children }) => (
+export default({children, data}) => (
   <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    <g.Div
+      margin={`0 auto`}
+      maxWidth={750}
+      padding={rhythm(1)}
+      paddingTop={rhythm(1)}
+      textAlign="center">
+      <Link to={`/`}>
+        <img src={logo} align="middle"></img>
+      </Link>
+      <g.H1>
+        {data.site.siteMetadata.title}
+      </g.H1>
+    </g.Div>
+
+
+    <g.Div
+      margin={`0 auto`}
+      maxWidth={500} 
+      padding={rhythm(1)}
+      paddingTop={rhythm(1)} >
+    {children()}
+    </g.Div>
   </div>
 )
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+export const query = graphql `
+query LayoutQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
 }
-
-export default TemplateWrapper
+`
