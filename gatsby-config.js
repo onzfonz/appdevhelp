@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Application Development Compendium`,
   },
   plugins: [`gatsby-plugin-react-helmet`],
+  pathPrefix: '/appdevhelp'
 }
