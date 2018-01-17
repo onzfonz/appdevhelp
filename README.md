@@ -1,13 +1,6 @@
-# gatsby-starter-default
-The default Gatsby starter
+# COMP 55 Application Development Help
+Static site for documentation for students in 55. Built using Gatsby.js.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+To add/edit documents, add/edit to src/docs. 
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+IMPORTANT TO-DO: Configure continuous deployment (see [Surge documentation on continuous deployment](https://surge.sh/help/deploying-continuously-using-git-hooks))
