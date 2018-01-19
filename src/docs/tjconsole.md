@@ -3,6 +3,7 @@ title: Traffic Jam Console
 ---
 
 # FAQ
+
 ## Q: My vehicles aren't showing up on the board!
 
 1. Do you understand how 2D arrays work?
