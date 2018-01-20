@@ -31,7 +31,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepush": "gatsby build && surge public/ --domain test55hook.surge.sh"
+    "prepush": "gatsby build && surge public/ --domain appdevhelp.surge.sh"
   },
   "devDependencies": {
     "husky": "^0.14.3",
