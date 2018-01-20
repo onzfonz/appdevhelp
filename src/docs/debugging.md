@@ -11,4 +11,4 @@ title: Debugging Tips
 5. Have you used all the debugging tools available to you?
   1. See the debugging lab.
   2. Debugging in action:
-  <iframe width="560" height="315" src="https://youtu.be/x9JArfGJb8c?t=6m50s" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x9JArfGJb8c?start=410" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
