@@ -1,5 +1,5 @@
 ---
-title: Traffic Jam Space & Vehicle
+title: Traffic Jam Location & Vehicle
 ---
 
 # FAQ
