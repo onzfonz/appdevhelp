@@ -6,8 +6,8 @@ title: Traffic Jam Space & Vehicle
 
 ## Q: I'm having trouble creating an array!
 
-1. Did you declare a Space array object?
-2. Did you use the keyword new to instantiate the Space array?
+1. Did you declare a Location array object?
+2. Did you use the keyword new to instantiate the Location array?
 
 >     arrayRefVar = new dataType[arraySize];
 
@@ -33,11 +33,11 @@ Correct way:
 
 # Function Specific
 
-## spacesOccupied()
+## locationsOn()
 
-1. Have you created an array of Spaces?
-    1. Did you declare a Space array object?
-    2. Did you use the keyword new to instantiate the Space array?
+1. Have you created an array of Locations?
+    1. Did you declare a Location array object?
+    2. Did you use the keyword new to instantiate the Location array?
     See BASIC JAVA HELP slides for more help.
 
 2. Have you checked a vehicle’s orientation?
@@ -45,18 +45,18 @@ Correct way:
     2. If a vehicle is horizontal, you want to count along the columns.
     See BASIC TRAFFIC JAM HELP (Slide 5) for more help.
 
-3. Are you returning an array of Spaces?
+3. Are you returning an array of Locations?
 
-## spacesOccupiedOnTrail()
+## locationsPath()
 
 1.	Do you understand what a vehicle is in this project?
 See BASIC TRAFFIC JAM HELP (Slide 1) for more help.
 
 2. Have you declared a new temporary Vehicle object?
 3. Have you checked the vehicle’s orientation?
-4. Are you iterating through and building an array of Spaces that a vehicle would travel on?
+4. Are you iterating through and building an array of Locations that a vehicle would travel on?
 5. Remember to use the head of the car if you’re moving in the positive direction or the tail of the vehicle if you’re moving with negative number of spaces.
-6. Are you returning an array of Spaces containing the spaces the vehicle would travel on?
+6. Are you returning an array of Locations containing the locations the vehicle would forge a path through?
 
 ## move()
 
